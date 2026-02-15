@@ -10,7 +10,7 @@
 
 A dark color theme for Visual Studio Code inspired by JetBrains' Islands Dark theme. Features floating glass-like panels, rounded corners, smooth animations, and a deeply refined UI.
 
-![Islands Dark Screenshot](assets/CleanShot%202026-02-14%20at%2021.42.45@2x.png)
+![Islands Dark Screenshot](assets/CleanShot%202026-02-14%20at%2021.47.05@2x.png)
 
 ## Features
 
@@ -26,6 +26,7 @@ A dark color theme for Visual Studio Code inspired by JetBrains' Islands Dark th
 - Warm syntax highlighting with comprehensive language support (JS/TS, Python, Go, Rust, HTML/CSS, JSON, YAML, Markdown)
 - Geist Mono font throughout
 
+![Islands Dark Screenshot UI](assets/CleanShot%202026-02-14%20at%2021.45.00@2x.png)
 
 ## Installation
 

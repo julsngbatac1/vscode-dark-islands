@@ -2,6 +2,7 @@
 
 set -e
 
+
 echo "🏝️  Islands Dark Theme Installer for macOS/Linux"
 echo "================================================"
 echo ""

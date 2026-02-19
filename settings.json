@@ -15,8 +15,8 @@
       "--islands-item-radius": "6px",
       "--islands-panel-gap": "6px",
       "--islands-panel-top": "6px",
-      "--islands-bg-canvas": "#121216",
-      "--islands-bg-surface": "#181a1d",
+      "--islands-bg-canvas": "#121518",
+      "--islands-bg-surface": "#191d21",
       "background-color": "var(--islands-bg-canvas) !important"
    },
    ".part.sidebar": {
@@ -118,12 +118,12 @@
    },
    ".editor-actions": {
       "padding-right": "20px !important",
-      "background-image": "linear-gradient(to top, #25262a 1px, transparent 1px) !important",
+      "background-image": "linear-gradient(to top, #2a2d34 1px, transparent 1px) !important",
       "background-repeat": "no-repeat !important",
       "background-position": "bottom !important"
    },
    ".tabs-container": {
-      "background-image": "linear-gradient(to top, #25262a 1px, transparent 1px) !important",
+      "background-image": "linear-gradient(to top, #2a2d34 1px, transparent 1px) !important",
       "background-repeat": "no-repeat !important",
       "background-position": "bottom !important"
    },
@@ -139,14 +139,14 @@
       "border-radius": "50% !important"
    },
    ".tab.active": {
-      "box-shadow": "inset -1px 0 0 0 #25262a, inset 1px 0 0 0 #25262a !important",
+      "box-shadow": "inset -1px 0 0 0 #2a2d34, inset 1px 0 0 0 #2a2d34 !important",
       "border-right": "none !important"
    },
    ".tab:not(.active)": {
-      "box-shadow": "inset 0 -1px 0 0 #25262a !important"
+      "box-shadow": "inset 0 -1px 0 0 #2a2d34 !important"
    },
    ".tab.active:first-child": {
-      "box-shadow": "inset -1px 0 0 0 #25262a !important"
+      "box-shadow": "inset -1px 0 0 0 #2a2d34 !important"
    },
    ".tab:hover .label-name": {
       "text-shadow": "0 0 5px rgba(255,255,255,0.15) !important",
@@ -229,11 +229,12 @@
    ".part.panel.bottom": {
       "border-radius": "var(--islands-panel-radius)",
       "overflow": "hidden !important",
+      "box-sizing": "border-box !important",
       "border-top": "6px solid var(--islands-bg-canvas) !important",
-      "border-left": "1px solid rgba(255,255,255,0.06) !important",
-      "border-bottom": "1px solid rgba(255,255,255,0.02) !important",
-      "border-right": "1px solid rgba(255,255,255,0.02) !important",
-      "box-shadow": "inset 0 1px 0 0 rgba(255,255,255,0.1), 0 2px 8px 0 rgba(0,0,0,0.3) !important"
+      "border-left": "var(--islands-panel-gap) solid var(--islands-bg-canvas) !important",
+      "border-right": "var(--islands-panel-gap) solid var(--islands-bg-canvas) !important",
+      "border-bottom": "none !important",
+      "box-shadow": "inset 0 1px 0 0 rgba(255,255,255,0.1), inset 1px 0 0 0 rgba(255,255,255,0.06), inset 0 -1px 0 0 rgba(255,255,255,0.02), inset -1px 0 0 0 rgba(255,255,255,0.02), 0 2px 8px 0 rgba(0,0,0,0.3) !important"
    },
    ".part.panel.bottom .message-box-container": {
       "border-radius": "10px !important",

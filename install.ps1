@@ -152,9 +152,13 @@ Write-Host "Islands Dark theme has been installed!" -ForegroundColor Green
 Write-Host "   VS Code will now reload to apply the custom UI style."
 Write-Host ""
 
-# Reload VS Code
-Write-Host "   Reloading VS Code..." -ForegroundColor Cyan
+# Reload VS Code twice — first reload activates Custom UI Style and patches
+# VS Code's CSS, second reload applies the patched CSS
+Write-Host "   Reloading VS Code to activate Custom UI Style..." -ForegroundColor Cyan
 try {
+    code --reload-window 2>$null
+    Start-Sleep -Seconds 5
+    Write-Host "   Reloading VS Code to apply CSS customizations..." -ForegroundColor Cyan
     code --reload-window 2>$null
 } catch {
     code $scriptDir 2>$null

@@ -46,6 +46,14 @@ else
     exit 1
 fi
 
+# Remove extensions.json so VS Code rebuilds it cleanly on next launch
+# (previous versions of this script wrote invalid content to this file)
+EXT_JSON="$HOME/.vscode/extensions/extensions.json"
+if [ -f "$EXT_JSON" ]; then
+    rm -f "$EXT_JSON"
+    echo -e "${GREEN}✓ Cleared extensions.json (VS Code will rebuild it)${NC}"
+fi
+
 echo ""
 echo "🔧 Step 2: Installing Custom UI Style extension..."
 if code --install-extension subframe7536.custom-ui-style --force; then

